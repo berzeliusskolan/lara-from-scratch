@@ -14,3 +14,13 @@
 Route::get('/','PagesController@home');
 Route::get('/about','PagesController@about');
 Route::get('/contact','PagesController@contact');
+
+//Route::get('/projects','ProjectsController@index');
+//Route::get('/projects/{id}','ProjectsController@show');
+//Route::get('/projects/new','ProjectsController@create');
+//Route::post('/projects','ProjectsController@store');
+//Route::get('/projects/{id}/edit','ProjectsController@edit');
+//Route::patch('/projects/{id}','ProjectsController@update');
+//Route::delete('/projects/{id}','ProjectsController@destroy');
+Route::resource('projects','ProjectsController');
+Route::resource('cars','CarsController');
